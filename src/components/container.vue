@@ -117,6 +117,7 @@ export default {
 
 .draggable {
   position: absolute;
+  top: 50%;
   width: 100px;
   height: 100px;
   color: #fff;
