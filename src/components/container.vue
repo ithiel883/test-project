@@ -43,10 +43,17 @@ export default {
 
     const drag = (event: MouseEvent) => {
       event.preventDefault();
+      containerDragging.value = false
+      if(x.value < 0 || y.value < 0 || x.value > 225 || y.value > 210){
+        dragging.value = false
+        x.value = 2
+        y.value = 2
+      }
       if (dragging.value) {
         x.value = event.clientX - startX.value;
         y.value = event.clientY - startY.value;
       }
+      console.log(x.value, y.value)
     };
 
     const endDrag = () => {
