@@ -53,7 +53,6 @@ export default {
         x.value = event.clientX - startX.value;
         y.value = event.clientY - startY.value;
       }
-      console.log(x.value, y.value)
     };
 
     const endDrag = () => {
